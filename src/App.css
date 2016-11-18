@@ -1,0 +1,204 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
+div, a{
+  box-sizing: border-box;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+}
+.app-sidebar{
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #153B50;
+}
+.app-body{
+  width: calc(100% - 250px);
+  height: 100vh;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+}
+.app-header{
+  width: calc(100% - 250px);
+  height: 60px;
+  margin-left: 250px;
+  background: #153B50;
+}
+.nav{
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 18px;
+  padding: 18px;
+  text-decoration: none;
+}
+.nav:visited{
+  color: #fff;
+  text-decoration: none;
+}
+.nav:focus{
+  color: #fff;
+  text-decoration: none;
+}
+.nav:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-active{
+  background: #33658A;
+}
+.new-plus{
+  border: 3px solid #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 22px;
+  padding-left: 3px;
+  position: absolute;
+  left: 18px;
+  top: 15px;
+}
+.create-nav{
+  padding-top: 18px;
+  padding-left: 56px;
+  font-weight: 600;
+}
+#photo-upload{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#photo-upload + label{
+  height: 54px;
+  width: 100%;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.info-row{
+  background: #dd5b4d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.create-input{
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #fff;
+  outline: none;
+  color: #fff;
+  height: 52px;
+/*  background: #f76f27;*/
+  z-index: 2;
+  position: relative;
+  font-size: 30px;
+  padding-top: 11px;
+  font-weight: 600;
+}
+.create-label{
+  color: #ddd;
+  font-size: 12px;
+  margin-top: -3px;
+  margin-bottom: -14px;
+  outline: none;
+  display: block;
+  z-index: 3;
+  position: relative;
+}
+.info-row .col-sm-3, .info-row .col-sm-5, .info-row .col-sm-4, .info-row .col-xs-6{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.info-row .row{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.create-date{
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+  height: 40px;
+  margin-top: -1px;
+}
+.create-date-label{
+  margin-bottom: -14px;
+  margin-top: 10px;
+}
+.date-wrapper-label{
+  color: #ddd;
+  font-size: 12px;
+  outline: none;
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 15px;
+}
+.body-wrapper{
+  margin-top: 60px;
+}
+.create-desc{
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+}
+.desc-label{
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  color: #aaa;
+}
+.recipe-row{
+  background: #dd5b4d;
+}
+.create-recipe{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.create-invites{
+  background: #eec857;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.recipe-label{
+  margin: 0px;
+}
+.ingredient{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px 0px;
+}
+.ingredient-num{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;
+  color: #dd5b4d;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  padding-right: 1px;
+  line-height: 28px;
+  display: inline-block;
+  margin-right: 10px;
+}
