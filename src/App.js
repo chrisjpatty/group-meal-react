@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './css/bootstrap.min.css';
 import './App.css';
-import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router'
+import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router';
+var DatePicker = require('react-datepicker');
+var moment = require('moment');
+require('react-datepicker/dist/react-datepicker.css');
 
 var App = React.createClass({ 
   render() {
@@ -69,6 +72,18 @@ var Home = React.createClass({
 })
 
 var Create = React.createClass({
+  getInitialState: function(){
+    return{
+      dateOpen: false
+    }
+  },
+  handleChange: function(e){
+    console.log(e.format('MM-DD-YY'));
+    this.setState({
+      value: e,
+      startDate: moment()
+    })
+  },
   render(){
     return(
       <div className="body-wrapper">
@@ -89,7 +104,13 @@ var Create = React.createClass({
                 <label className="date-wrapper-label">When is your event?</label>
                 <div className="col-xs-6">
                   <label htmlFor="meal-date" className="create-label create-date-label" >Date:</label>
-                  <input type="text" id="meal-date" className="create-input create-date" />
+                  <DatePicker
+                    type="text"
+                    id="meal-date"
+                    className="create-input create-date"
+                    dateFormat="MM/DD/YY"
+                    selected={this.state.value}
+                    onChange={this.handleChange}/>
                 </div>
                 <div className="col-xs-6">
                   <label htmlFor="meal-time" className="create-label create-date-label" >Time:</label>
